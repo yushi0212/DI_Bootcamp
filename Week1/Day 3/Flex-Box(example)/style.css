@@ -1,0 +1,71 @@
+html{
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 14px;
+}
+
+.container{
+    background-color: whitesmoke;
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-template-areas:
+    'y1 y1 y1 y1'
+    'y2 y3 y3 y3'
+    'y2 y3 y3 y3'
+    'y4 y3 y3 y3'
+    'y4 y5 y5 y5'
+    'y6 y6 y6 y7'
+    'y8 y8 y8 y8';
+    grid-gap: 10px;
+    grid-template-rows: 50px repeat(4, 80px) 50px;
+}
+
+.item{
+    color: black;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.item-1{
+    grid-area: y1;
+    background-color: aqua;
+}
+
+.item-2{
+    grid-area: y2 ;
+    background-color:grey;
+}
+
+.item-3{
+grid-area: y3;
+background-color: blanchedalmond;
+}
+
+.item-4{
+    grid-area: y4;
+    background-color: aquamarine;
+}
+
+.item-5{
+    grid-area: y5;
+    background-color: deepskyblue;
+}
+.item-6{
+    grid-area: y6;
+    background-color: green;
+}
+.item-7{
+    grid-area: y7;
+    background-color: cyan;
+}
+.item-8{
+    grid-area: y8;
+    background-color: darksalmon;
+}
